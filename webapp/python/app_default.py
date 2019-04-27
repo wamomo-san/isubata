@@ -21,10 +21,10 @@ if not os.path.exists(str(icons_folder)):
     os.makedirs(str(icons_folder))
 
 config = {
-    'db_host': os.environ.get('ISUBATA_DB_HOST', '127.0.0.1'),
+    'db_host': os.environ.get('ISUBATA_DB_HOST', 'localhost'),
     'db_port': int(os.environ.get('ISUBATA_DB_PORT', '3306')),
-    'db_user': os.environ.get('ISUBATA_DB_USER', 'isucon'),
-    'db_password': os.environ.get('ISUBATA_DB_PASSWORD', 'isucon'),
+    'db_user': os.environ.get('ISUBATA_DB_USER', 'root'),
+    'db_password': os.environ.get('ISUBATA_DB_PASSWORD', ''),
 }
 
 
